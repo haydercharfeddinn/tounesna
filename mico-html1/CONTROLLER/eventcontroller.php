@@ -118,34 +118,60 @@ function showevent($id)
             }
         }
     
+        public function getReservationStats() {
+            try {
+                $query = $this->db->prepare("
+                    SELECT events.nom_eve, COALESCE(SUM(clients.nbrp), 0) AS total_reservations
+                    FROM events
+                    LEFT JOIN clients ON clients.event_id = events.id
+                    GROUP BY events.nom_eve
+
+                ");
+                $query->execute();
+                return $query->fetchAll(PDO::FETCH_ASSOC);
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
+        }
 
 }
 
+
 //...............................................................................................................................................
 
-class ticketcontroller{
-    function addticket($ticket)
+class clientcontroller{
+    function addclient($client)
     {
-        if ($ticket === null) {
-            echo 'Error: The $ticket object is null.';
+        if ($client === null) {
+            echo 'Error: The $client object is null.';
             return;
         }
 
-        $sql = "INSERT INTO tickets  
-        VALUES (NULL, :event_id, :user_id, :purchase_date, :quantity, :total_price)";
+        $sql = "INSERT INTO clients  
+        VALUES (NULL, :event_id, :email, :nbrp)";
         $db = config::getConnexion();
         try {
             $query = $db->prepare($sql);
             $query->execute([
-                ':event_id' => $ticket->getevent_id(),
-                ':user_id' => $ticket->getuser_id(),
-                ':purchase_date' => $ticket->getpurchase_date()->format('Y-m-d'),
-                ':quantity' => $ticket->getquantity(),
-                ':total_price' => $ticket->gettotal_price()
+                ':event_id' => $client->getevent_id(),
+                ':email' => $client->getemail(),
+                ':nbrp' => $client->getnbrp(),
             ]);
-            echo 'Événement ajouté avec succès.';
         } catch (Exception $e) {
             echo 'Error: ' . $e->getMessage();
+        }
+    }
+    
+    public function listclient()// affiche kol chyy
+    {
+        $sql = "SELECT * FROM clients";
+        $db = config::getConnexion();  //initialitaion de variable mte3 el base
+        try {
+
+            $liste = $db->query($sql);//nlanci requette
+            return $liste;
+        } catch (Exception $e) { //ereeur
+            die('Error:' . $e->getMessage());
         }
     }
 

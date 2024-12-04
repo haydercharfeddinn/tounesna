@@ -62,22 +62,18 @@ class event {
 
 
 
-class ticket {
+class clients {
     private ?int $id;
     private ?int $event_id;
-    private ?int $user_id;
-    private ?DateTime $purchase_date;
-    private ?int $quantity;
-    private ?float $total_total_price;
+    private ?string $email;
+    private ?int $nbrp;
 
     // Constructor
-    public function __construct(?int $id,  ?string $type_, ?string $user_id, ?DateTime $purchase_date, ?float $total_price,) {
+    public function __construct(?int $id,  ?int $event_id, string $email, ?int $nbrp,) {
         $this->id = $id;
         $this->event_id = $event_id;
-        $this->user_id = $user_id;
-        $this->purchase_date = $purchase_date;
-        $this->quantity = $quantity;
-        $this->total_total_price = $total_total_price;
+        $this->email = $email;
+        $this->nbrp = $nbrp;
     }
 
     //getters and setters
@@ -91,42 +87,26 @@ class ticket {
 
 
     public function getevent_id(): ?int {
-        return $this->type_;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
+        return $this->event_id;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
     }
     public function setevent_id(?int $event_id): void {
         $this->event_id= $event_id;// setter methode taabi be champ be champ
     }
 
 
-    public function getuser_id(): ?int {
-        return $this->user_id;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
+    public function getemail(): ?string {
+        return $this->email;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
     }
-    public function setuser_id(?int $user_id): void {
-        $this->user_id = $user_id;// setter methode taabi be champ be champ
-    }
-
-    
-    public function getpurchase_date(): ?DateTime {
-        return $this->purchase_date;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
-    }
-    public function setpurchase_date(?DateTime $purchase_date): void {
-        $this->purchase_date = $purchase_date;// setter methode taabi be champ be champ
+    public function setemail(?string $email): void {
+        $this->email = $email;// setter methode taabi be champ be champ
     }
 
 
-    public function getquantity(): ?int {
-        return $this->quantity;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
+    public function getnbrp(): ?int {
+        return $this->nbrp;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
     }
-    public function setquantity(?int $quantity): void {    
-        $this->quantity = $quantity;// setter methode taabi be champ be champ
-    }
-
-
-    public function gettotal_price(): ?float {
-        return $this->total_price;//tekhou ml classe 'un enregistrement ) , khatrou private matnjmch takhou direcet lazmek getter
-    }
-    public function settotal_price(?float $total_price): void {    
-        $this->total_price = $total_price;// setter methode taabi be champ be champ
+    public function setnbrp(?int $nbrp): void {
+        $this->nbrp = $nbrp;// setter methode taabi be champ be champ
     }
 }
 ?>

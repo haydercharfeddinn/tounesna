@@ -238,7 +238,7 @@ h2 {
                       <p><strong>Date :</strong> <?= $event['date_'] ?></p>
                       <p><strong>Prix :</strong> <?= $event['price'] ?> €</p>
                       <div class="actions">
-                        <a href="modifier.php?id=<?= $event['id'] ?>">
+                        <a href="ajoutclient.php?id=<?= $event['id'] ?>">
                             <button class="btn btn-outline-success btn-sm">Ajouter panier</button>
                         </a>
                       </div>

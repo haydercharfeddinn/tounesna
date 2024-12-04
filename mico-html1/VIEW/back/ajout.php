@@ -23,7 +23,7 @@ if (isset($_POST["type_"])  && $_POST["nom_eve"] && $_POST["date_"] && $_POST["p
             $_POST['price']
         );
         //
-            
+        
         $eventcontroller->addevent($event); //bel fonction sabina fi waset base
 
        header('Location:affiche.php');//aytlha bech yafishiha louta
@@ -188,6 +188,13 @@ if (isset($_POST["type_"])  && $_POST["nom_eve"] && $_POST["date_"] && $_POST["p
                 <span>Back to event List</span></a>
         </li>
 
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="afficheclientt.php">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Client list</span></a>
+        </li>
+        
 
     </ul>
 

@@ -208,9 +208,22 @@ if (!$events) {
             <span>Ajouter</span></a>
     </li>
 
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+            <a class="nav-link" href="dashboard.php">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span></a>
+    </li>
 
-</ul>
-<!-- End of Sidebar -->
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+            <a class="nav-link" href="afficheclientt.php">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Client list</span></a>
+    </li>
+
+    </ul>
+    <!-- End of Sidebar -->
 
     
 
