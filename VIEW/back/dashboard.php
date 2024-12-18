@@ -97,9 +97,14 @@ foreach ($reservationStats as $stat) {
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../front/event.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/affiche.php">
         
         <div class="sidebar-brand-text mx-3">Event <sup></sup></div>
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/backoffice.php">
+        
+        <div class="sidebar-brand-text mx-3">SHOP <sup></sup></div>
+      
     </a>
 
     <!-- Divider -->
@@ -112,17 +117,19 @@ foreach ($reservationStats as $stat) {
             <span>Ajouter</span></a>
     </li>
 
-    <li class="nav-item active">
-            <a class="nav-link" href="affiche.php">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Back to event List</span></a>
-    </li>
+
+    
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
             <a class="nav-link" href="afficheclientt.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Client list</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="../back/admin/pages/dashboard.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Admin</span></a>
     </li>
 
     </ul>

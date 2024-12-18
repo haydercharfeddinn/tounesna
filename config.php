@@ -1,7 +1,7 @@
 <?php
 class config {
     private static $dbHost = 'localhost';   // Serveur de base de données
-    private static $dbName = 'touensa'; // Nom de la base de données
+    private static $dbName = 'test'; // Nom de la base de données
     private static $dbUser = 'root'; // Utilisateur MySQL (par défaut : root)
     private static $dbPass = '';    // Mot de passe (par défaut vide pour XAMPP)
 
