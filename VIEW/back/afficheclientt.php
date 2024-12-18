@@ -105,9 +105,34 @@ $clients = $controller->listclient(); // Récupérer tous les clients
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../front/event.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/affiche.php">
         
         <div class="sidebar-brand-text mx-3">Event <sup></sup></div>
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/backoffice.php">
+        
+        <div class="sidebar-brand-text mx-3">SHOP <sup></sup></div>
+      
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/listeRec.php">
+        
+        <div class="sidebar-brand-text mx-3">Réclamation <sup></sup></div>
+      
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/dashboardblog.php">
+        
+        <div class="sidebar-brand-text mx-3">blog <sup></sup></div>
+      
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/admin/pages/dashboard.php">
+        
+        <div class="sidebar-brand-text mx-3">Admin<sup></sup></div>
+      
+    </a>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../back/createquiz.php">
+        
+        <div class="sidebar-brand-text mx-3">Quiz <sup></sup></div>
+      
     </a>
 
     <!-- Divider -->
@@ -122,16 +147,12 @@ $clients = $controller->listclient(); // Récupérer tous les clients
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="dashboard.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
     </li>
-
-    <li class="nav-item active">
-        <a class="nav-link" href="affiche.php">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Back to event List</span></a>
-    </li>
+   
+    
 
 
     </ul>

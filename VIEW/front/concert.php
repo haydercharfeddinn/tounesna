@@ -168,7 +168,7 @@ h2 {
           <div class="header_bottom">
             <div class="container-fluid">
               <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="home.php">
                   <img src="../../images/logo.jpg" alt="">
                 </a>
                 </a>
@@ -181,16 +181,16 @@ h2 {
                   <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                     <ul class="navbar-nav  ">
                       <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="about.html"> About</a>
+                        <a class="nav-link" href="about.php"> About</a>
                       </li>
                       <li class="nav-item active">
                         <a class="nav-link" href="event.html">Events</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
+                        <a class="nav-link" href="quizList.php">Reservation</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="testimonial.html">Testimonial</a>
@@ -201,13 +201,13 @@ h2 {
                     </ul>
                   </div>
                   <div class="quote_btn-container">
-                    <a href="">
+                    <a href="../back/admin/pages/login.php">
                       <i class="fa fa-user" aria-hidden="true"></i>
                       <span>
                         Login
                       </span>
                     </a>
-                    <a href="">
+                    <a href="../back/admin/pages/register.php">
                       <i class="fa fa-user" aria-hidden="true"></i>
                       <span>
                         Sign Up
@@ -319,13 +319,13 @@ h2 {
                 <a href="index.html">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
                 <a href="event.html" class="active">
                   Event
                 </a>
-                <a href="reservation.html">
+                <a href="quizList.php">
                   Reservation
                 </a>
                 <a href="testimonial.html">
